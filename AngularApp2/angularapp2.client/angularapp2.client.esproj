@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.784122">
+  <PropertyGroup>
+    <StartupCommand>npm start</StartupCommand>
+    <JavaScriptTestFramework>Jasmine</JavaScriptTestFramework>
+    <!-- Allows the build (or compile) script located on package.json to run on Build -->
+    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <!-- Folder where production build objects will be placed -->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\angularapp2.client\browser\</BuildOutputFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\app\Ahmed\Home\" />
+    <Folder Include="src\app\Ahmed\Nav\" />
+    <Folder Include="src\app\Ahmed\SubService\" />
+    <Folder Include="src\app\Ahmed\Service\" />
+    <Folder Include="src\app\Ahmed\Url\" />
+  </ItemGroup>
+</Project>
